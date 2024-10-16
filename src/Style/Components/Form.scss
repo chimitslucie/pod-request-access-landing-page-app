@@ -58,12 +58,12 @@
                 background-color: $greenActive;
             }
         }
+    }
 
-        &.error {
-            color: $red;
-            font-weight: 700;
-            font-size: 12px;
-            margin-top: 8px;
-        }
+    &MessageError {
+        color: $red;
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: 8px;
     }
 }
