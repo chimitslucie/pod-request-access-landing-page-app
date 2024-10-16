@@ -1,0 +1,101 @@
+.app {
+    background-color: $blue950;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 1180px) {
+        overflow-y: auto;
+    }
+
+    &Img {
+        background-image: url("../../Assets/Img/Header/desktopImg.jpg");
+        max-width: 960px;
+        max-height: 654px;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: 153px;
+
+        @media (max-width: 1180px) {
+            background-image: url("../../Assets/Img/Header/tabletImg.jpg");
+            max-width: 460px;
+            max-height: 868px !important;
+            background-size: cover;
+            top: 0;
+        }
+
+        @media (max-width: 600px) {
+            background-image: url("../../Assets/Img/Header/mobileImg.jpg");
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.5);
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        @media (max-width: 470px) {
+            right: 0;
+            transform: translateX(0);
+        }
+
+    }
+
+    &LogoImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @media (max-width: 600px) {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    position: relative;
+    max-height: 654px;
+    height: 100%;
+    margin: auto;
+    top: 57%;
+    transform: translateY(-50%);
+
+    @media (max-width: 1400px) {
+        max-width: 1140px;
+    }
+
+    @media (max-width: 1180px) {
+        max-width: 680px;
+        top: 34%;
+        transform: translateY(-30%);
+    }
+
+    @media (max-width: 600px) {
+        max-width: 303px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.dots {
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+
+    @media (max-width: 1180px) {
+        bottom: 0;
+        right: -110px;
+    }
+
+    @media (max-width: 695px) {
+        display: none;
+    }
+}
